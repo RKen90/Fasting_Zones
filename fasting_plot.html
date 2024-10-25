@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Fasting Plot</title>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Protest+Guerrilla&display=swap"
+            rel="stylesheet">
+        <style>
+            body {
+                background-color: #034694;
+                font-family: 'Lexend Deca', sans-serif;  /* Default font */
+                margin: 0;
+                display: flex;
+                flex-direction: column;  /* Arrange items vertically */
+                justify-content: flex-start;  /* Align items at the top of the viewport */
+                align-items: center;
+                height: 100vh;  /* Full height of the viewport */
+              }
+              
+              h1#plot-title {
+                font-size: 2.5em;
+                font-weight: bold;
+                color: #fff;
+                margin-bottom: 20px;
+                text-align: center;  /* Ensure the title is centered */
+              }
+              
+        
+
+        svg {
+          max-width: 70%;
+          height: auto;
+        }  
+    </style>
+    </head>
+    <body>
+        <h1 id="plot-title">Fasting Zone Visualization</h1>
+        <div id="tooltip" style="position: absolute; visibility: hidden;
+            background-color: #fff; border: 1px solid #ccc; padding: 5px;
+            border-radius: 4px; font-size: 12px; box-shadow: 0px 0px 10px
+            rgba(0, 0, 0, 0.1); pointer-events: none;"></div>
+        <div id="chart"></div>
+        <script src="script.js"></script>
+    </body>
+</html>
